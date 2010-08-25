@@ -44,7 +44,7 @@ public class UprisingTwitter extends TabActivity {
         
         th.addTab(th.newTabSpec("tab3")
         			.setIndicator("DM", DMicon)
-        			.setContent(new Intent(this, Compose.class)));
+        			.setContent(new Intent(this, DM.class)));
     }
     
     public boolean onCreateOptionsMenu (Menu menu) {
