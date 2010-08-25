@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content">
+  
+     <ImageView
+     	android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:adjustViewBounds="true"
+     	android:maxWidth="45px"
+     	android:maxHeight="45px"
+     	android:cropToPadding="true"
+     	android:layout_marginTop="5px"
+     	android:layout_marginRight="5px"
+     	android:src="@drawable/icon"
+     	android:id="@+id/userPhoto" />
+     
+     <LinearLayout 
+  		android:id="@+id/idntime"
+  		android:layout_height="wrap_content"
+    	android:layout_width="fill_parent"
+    	android:layout_toRightOf="@id/userPhoto">
+
+	    
+	    <TextView 
+	    	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content" 
+	      	android:id="@+id/textUser"
+	      	android:textStyle="bold" />	    
+	    <TextView 
+	    	android:layout_height="wrap_content"
+	    	android:id="@+id/textCreatedAt"
+	      	android:layout_gravity="right"
+	      	android:gravity="right"
+	      	android:layout_width="fill_parent" />
+
+ 	</LinearLayout>
+  
+  	<TextView 
+  		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/textTimeline"
+    	android:autoLink="all"
+    	android:layout_below="@id/idntime"
+    	android:layout_toRightOf="@id/userPhoto" />
+
+</RelativeLayout>

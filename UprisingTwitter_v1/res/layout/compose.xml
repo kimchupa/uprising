@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  
+  <EditText
+  	android:id="@+id/compose_edittext"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:maxLength="140"
+  	android:maxLines="11"
+  	android:minLines="11"
+  	android:gravity="top"
+  	android:layout_weight="1"
+  	android:hint="What’s happening?"/>
+  
+  <TableLayout
+  		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="0">
+	  
+	  <TableRow>
+		  <Button
+		  	android:id="@+id/compose_sendbutton"
+		  	android:layout_width="100px"
+		  	android:layout_height="wrap_content"
+		  	android:text="Send"/>
+		  
+		  <Button
+		  	android:id="@+id/compose_cancelbutton"
+		  	android:layout_width="100px"
+		  	android:layout_height="wrap_content"
+		  	android:text="Cancel"/>
+	  	</TableRow>
+  	</TableLayout>
+  
+  
+</LinearLayout>
